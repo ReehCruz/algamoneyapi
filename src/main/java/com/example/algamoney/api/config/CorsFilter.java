@@ -11,6 +11,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -22,8 +23,6 @@ public class CorsFilter implements Filter{
 	
 	UrlBasedCorsConfigurationSource source;
 	
-	//private String origemPermitida;
-
 	public CorsFilter() {}
 	public CorsFilter(UrlBasedCorsConfigurationSource source) { this.source = source; }
 
